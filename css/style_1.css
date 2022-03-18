@@ -1,0 +1,345 @@
+/* STYLING THE DASHBOARD */
+body{
+    display: grid;
+}
+
+aside {
+    width: 16%;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr 30%;
+}
+aside a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    margin: 1% auto;
+    padding: 10px 0 10px 15%;
+    /* transition: 0.5s; */
+}
+
+.logo-box {
+    padding: 10% 0 10% 15%;
+    align-items: center;
+}
+
+.buttom-1{
+    padding-left: 10%;
+}
+
+.buttom-1:hover {
+    padding-left: calc(10% - 1px);
+}
+
+.buttom-2 {
+    padding-left: 14%;
+}
+
+.buttom-2:hover {
+    padding-left: calc(14% - 1px);
+}
+
+aside a img {
+    margin-right: 10%;
+}
+
+.buttom-1 img, .logo-box img {
+    margin-right: 5%;
+}
+aside nav a.active, aside nav a:hover {
+    background-color: rgba(29, 43, 79, 1);
+    border-left: 1px solid;
+    padding-left: calc(15% - 1px);
+}
+main{
+    margin-left: 16%;
+    width: 84%;
+}
+
+.notification{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 10px;
+}
+.notification:hover{
+    cursor: pointer;
+}
+.grid-container{
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3%;
+}
+
+.schedule-main-reverse {
+    grid-template-columns: 1fr 2fr !important;
+}
+
+.welcome-text-container {
+    position: relative;
+    padding: 3% 3% 0;
+}
+.container{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.welcome-image {
+    position: absolute;
+    height: 90%;
+    bottom: 0;
+    right: 5%;
+}
+
+.welcome-text{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;  
+    padding: 30px;
+    border-radius: 8px;
+}
+.appointments-button{
+    background-color: rgba(255, 255, 255, 0.281);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 15px;
+}
+.new-appointments-text{
+    width: 60%;
+    margin-bottom: 20px;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 30%;
+    padding: 20px;
+    border-radius: 3%;
+    margin: 15px 0;
+}
+.patients-card{
+    margin-bottom: 15px;
+}
+.pt-card{
+    border-radius: 10px;
+}
+.nxt-pt{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 2%;
+}
+.calender-div{
+    margin: 0 0 15px 0;
+}
+.gender-chart-div{
+    margin: 0 0 15px 0;
+}
+.bar-chart-div img{
+    width: 100%;
+}
+.small-grid img{
+    width: 100%;
+}
+.your-next-patient:after{
+    display: block;
+    content: "";
+    margin: 18px 0 10px;
+    border-bottom: 5px solid rgb(91, 172, 243);
+    width: 60px;
+    
+}
+
+.patient-appointment{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 2%;
+    gap: 10px;
+    
+}
+.patient-info{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 2% 4% 2% 2%;
+    background-color:  rgba(134, 146, 166, 0.05);
+    border-radius: 10px;
+    align-items: center;
+    gap: 3%;
+}
+.activities{
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+.activity-div{
+    /* display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px; */
+    margin: 10px;
+}
+
+.activity-div > div {
+    padding: 3%;
+    background-color: rgba(134, 146, 166, 0.05);
+    display: flex;
+    gap: 5%;
+    margin: 10px 0;
+    border-radius: 8px;
+
+}
+
+
+/* SCHEDULE PAGE STYLE */
+.schedule-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 3%;
+    gap: 3%;
+}
+
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width:950px){
+    nav a div, .logo-box div {
+        display: none;
+    }
+
+    aside{
+        width: 8%;
+    }
+
+    .welcome-image {
+        filter: opacity(0.3);
+    }
+
+    aside a {
+        margin: 1% 0;
+        padding: 10px 0;
+    }
+
+    .buttom-1{
+        padding-left: unset;
+    }
+    
+    .buttom-1:hover {
+        padding-left: unset;
+    }
+    
+    .buttom-2 {
+        padding-left: unset;
+    }
+    
+    .buttom-2:hover {
+        padding-left: unset;
+    }
+    
+    aside a img {
+        margin-right: unset;
+        margin: 0 auto;
+    }
+    
+    .buttom-1 img, .logo-box img {
+        margin-right: unset;
+        display: block;
+        margin: 0 auto;
+    }
+    aside nav a.active, aside nav a:hover {
+        border-left: none;
+        padding-left: unset;
+    }
+    
+    .logo-box {
+        padding: 10% 10%;
+    }
+
+    main{
+        margin-left: 8%;
+        width: 92%;
+    }
+
+    .whole-body {
+        display: block;
+    } 
+    .grid-container{
+        display: block;
+    }
+    .calender-div{
+        width: 47.5%;
+    }
+    .gender-chart-div{
+        width: 47.5%;
+    }
+    .small-grid{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .activities{
+        width: 100%;
+    }
+
+    .patients-card{
+        margin-top: 15px;
+    }
+}
+
+@media only screen  and (max-width: 650px) {
+    aside {
+        height: fit-content;
+        width: 100%;
+        top: unset;
+        bottom: 0;
+        z-index: 5;
+    }
+
+    aside > *:first-child, aside > *:last-child {
+        display: none;
+    }
+
+    aside nav {
+        padding: 0 7.5%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    aside a {
+        margin: 0;
+        padding: 10px;
+    }
+
+    main{
+        margin-left: 0;
+        width: 100%;
+    }
+    .cards-container{
+        display: block;
+    }
+    .card{
+        width: 65%;
+        min-width: 250px;
+        margin:  15px auto;
+    }
+    .welcome-text-container{
+        min-width:50%;
+    }
+    .welcome-text h4{
+        font-size: 25px;
+    }
+    .appointments-button{
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .welcome-text h4 {
+        font-size: 20px;
+    }
+    .card .total-patients{font-size: 25px;}
+    .scheduledApmnt{font-size: 25px;}
+    .waiting-room{font-size: 25px;}
+}   

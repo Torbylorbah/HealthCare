@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../Css/common_style.css">
+    <link rel="stylesheet" href="../Css/style_1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="main-bg-color">
+    <aside class="blue-bg white">
+        <div class="logo-box flex mg-buttom">
+            <img src="../images/logo-gan.svg">
+            <div><a href="/">HealtLite</a></div>
+        </div>
+        <nav class="menulist">
+            <a href="" class="active">
+                <img src="../images/dashboard.png">
+                <div>Dashboard</div>
+            </a>
+
+            <a href="">
+                <img src="../images/waiting room .png">
+                <div>Waiting Room</div>
+            </a>
+
+            <a href="../schedule/schedule.html">
+                <img src="/images/schdule logo.svg">
+                <div>Schedule</div>
+            </a>
+
+            <a href="">
+                <img src="../images/my patients.png">
+                <div>My Patients</div>
+            </a>
+
+            <a href="">
+                <img src="../images/notes.png">
+                <div>Notes</div>
+            </a>
+
+            <a href="">
+                <img src="../images/chats.png">
+                <div>Chats</div>
+            </a>
+        </nav>
+
+        <nav class="menu-buttom">
+            <a href="" class="buttom-1">
+                <img src="../images/my profile.png">
+                <div>My Profile</div>
+            </a>
+
+            <a href="" class="buttom-2">
+                <img src="../images/settings.png">
+                <div>Settings</div>
+            </a>
+        </nav>
+    </aside>
+
+    <main class="">
+        <div class="topmost white-bg">
+            <div class="flex notification">
+                <img src="../images/notification bell.png">
+                <img src="../images/notification image.png">
+            </div>
+        </div>
+        <!--  -->
+        <section class="grid-container">
+           <div class="big-grid">
+                <div class="welcome-text-container">
+                    <div class="welcome-text blue-bg white pd-2">
+                        <h4 class="mg-buttom font-6">Welcome,<span class="font-5">Dr Fayemi David</span></h4>
+                        <p class="new-appointments-text line1">You have <span class="scheduledApmnt">0</span> new appointments and there are currently <span class="total-patients">0</span>
+                            patients in the waiting room. Have a nice day!</p>
+                        <div>
+                            <button class="
+                            appointments-button"><i class="fa fa-eye"></i>  &nbsp;View your appointments</button>
+                            <button class=" appointments-button">Go to waiting room &nbsp; <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                
+                    <img src="../images/character 2.png" class="welcome-image">
+                
+                </div>
+                <!--  -->
+                <div class="cards-container flex mg-top">
+                    <div class="card shadow white-bg">
+                        <div class="flex mg-buttom align">
+                            <img src="../images/personchart.png">
+                            <p class="font-4">All Time &nbsp;<i class="fa fa-angle-down"></i></p>
+                        </div>
+                        <p class="black font5 mg-buttom total-patients">0</p>
+                        <p class="grey font2 mg-buttom">Total Patients</p>
+                            <p> <i class="fa fa-arrow-down red"></i> &nbsp;5% less than last month</p>
+
+                    </div>
+                    <div class="card shadow white-bg">
+                        <div class="flex mg-buttom align">
+                            <img src="../images/Group 11850.png">
+                            <p class="font-4">Today &nbsp;<i class="fa fa-angle-down"></i></p>
+                        </div>
+                        <p class="black font5 mg-buttom scheduledApmnt">0</p>
+                        <p class="grey font2 mg-buttom">Appointments</p>
+                            <p> <i class="fa fa-arrow-up green"></i> &nbsp; 15% more than yesterday</p>
+                    
+                        
+                    </div>
+                    <div class="card shadow white-bg">
+                        <div class="flex mg-buttom align">
+                            <img src="../images/Group 30799.png">
+                            <p class="font-4">Today &nbsp; <i class="fa fa-angle-down"></i> </p>
+                        </div> 
+                        <p class="black font5 mg-buttom waiting-room">0</p>
+                        <p class="grey font2 mg-buttom">Waiting Room</p>
+                            <p>  <i class="fa fa-arrow-up green"></i> &nbsp;35% less than yesterday</p>
+                    </div>
+                </div>
+                <div id="patients" class="patients-card">
+                    <div class="shadow white-bg p-card pd-1 pt-card">
+                        <div class="nxt-pt">
+                            <div class="font-4 your-next-patient">Your next patients</div>
+                            <div class="">View All &nbsp;<i class="fa fa-angle-down"></i></div>
+                        </div>
+                        <div id="patient_appoin">
+                            
+                        </div>
+
+                        
+    
+                    </div>
+                </div>
+    
+                <div class="bar-chart-div">
+                    <img class="bar-chart" src="../images/bar-chart.svg">
+                </div>
+           </div>
+
+            <div class="small-grid">
+                    <div class="calender-div">
+                        <img class="calender-div" src="../images/big-calender.svg">
+                    </div>
+
+
+                    <div class="gender-chart-div">
+                        <img class="gender-chart" src="../images/patients by gender.svg">
+                    </div>
+
+                    <div class="activities white-bg shadow pd-1">
+                        <div id="" class="act flex align">
+                            <div>
+                                <h4>Activities</h4>
+                            </div>
+                            <div>
+                                <img src="../images/blue-bell2.svg">
+                            </div>
+                        </div>
+                        <div class="activity-div">
+                            
+                        </div>
+                    </div>
+            </div>
+        </section>   
+         
+    </main>
+<script src="../js/script2.js"></script>
+</body>
+
+</html>
