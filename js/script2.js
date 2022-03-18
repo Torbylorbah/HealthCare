@@ -3,7 +3,7 @@ let sAppointments = document.querySelectorAll('.scheduledApmnt');
 let patientsWaiting = document.querySelectorAll('.waiting-room');
 let totalPatients = document.querySelectorAll('.total-patients')
 let activity = document.querySelector('.activity-div')
-let id = id =>document.getElementById(id);
+let id = id =>  document.getElementById(id);
 let patient_appoin = id('patient_appoin');
 
 const getData = async () => {
@@ -96,8 +96,6 @@ const getData = async () => {
                         <p>${patients.title}</p>
                     </div>
                 </div>
-
-                
                 `
             }
         }
