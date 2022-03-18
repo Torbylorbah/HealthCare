@@ -4,10 +4,10 @@ let patientContainer = []
 let fullName = document.querySelector('#fullName')
 let email = document.querySelector('#email')
 let message = document.querySelector('#message')
-let myForm = document.querySelector('#contact_form')
+let myButton = document.querySelector('.contact-form-button')
 
 
-myForm.addEventListener('submit', (e) => {
+myButton.addEventListener('click', (e) => {
   e.preventDefault()
   let patientDetails = {
     fullName: fullName.value,

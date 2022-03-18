@@ -32,7 +32,7 @@
             </div>
     </section>
         <section class="section-2 white-bg pd-1">
-            <div class="container flex n-a-center">
+            <div class="container flex n-a-center align">
                 <div class="first-card shadow">
                     <div class=" cont-details blue-bg white font-6">Contact Details</div>
                         <div class="pd-2 contact-details flex-1 ">
@@ -60,10 +60,10 @@
                 
                 <div class="contact-form shadow pd-1">
                     <form id="contact_form">
-                        <input type="text" placeholder="Enter Your Name*">
-                        <input type="email" placeholder="Enter Your Email Address* ">
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Write Your Message"></textarea>
-                        <button class=" contact-form-button btn btn-blue"
+                        <input type="text"  id="fullName" placeholder="Enter Your Name*" required>
+                        <input type="email" id="email" placeholder="Enter Your Email Address*" required>
+                        <textarea name="" id="message" cols="30" rows="5" placeholder="Write Your Message"></textarea>
+                        <button class="contact-form-button btn btn-blue"
                         type="submit">Send Message</button>
                     </form>
                 </div>
