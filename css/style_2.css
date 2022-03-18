@@ -20,7 +20,7 @@ nav a:hover:not(:last-child){
 
 /* CONTACT PAGE STYLES */
 .section-1{
-    height: 70vmin;
+    height: 100vmin;
     min-height: 500px;
     position: relative;
 }
@@ -394,7 +394,7 @@ footer img,  .app-store img, .tick-icon {
 @media only screen and (max-width: 850px) {
     .land-section1{
         min-height: unset;
-        height: 40vmax;
+        height: 100vmax;
     }
 
     .land-content1 {
