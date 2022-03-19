@@ -14,8 +14,8 @@ nav a{
     text-decoration: none;
     cursor: pointer;
 }
-nav a:hover:not(:last-child){
-    color: white;
+nav a:hover{
+    color: black;
 }
 
 /* CONTACT PAGE STYLES */
